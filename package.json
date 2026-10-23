@@ -1,0 +1,27 @@
+{
+  "name": "dsh-research-commands",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Registers fifteen slash commands (/idea, /review, /poster, ...) that inject the matching research skill's SKILL.md as a user message, so installed skills run without a marketplace.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "author": "hzh5021",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hzh5021/dsh-research-commands.git"
+  },
+  "homepage": "https://github.com/hzh5021/dsh-research-commands#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
